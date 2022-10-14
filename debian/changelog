@@ -1,0 +1,52 @@
+node-multipipe (4.0.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on node-duplexer2,
+      node-object-assign.
+    + node-multipipe: Drop versioned constraint on node-duplexer2,
+      node-object-assign in Depends.
+
+  [ Yadd ]
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+
+ -- Yadd <yadd@debian.org>  Tue, 09 Nov 2021 01:49:26 +0100
+
+node-multipipe (4.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs auto test & install
+  * New upstream version 4.0.0
+  * Remove useless Makefile patch
+  * Disable 2 tests incompatible with recent node-through2. node-through2 is
+    just a test dependency here (Closes: #975226)
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 19 Nov 2020 11:30:23 +0100
+
+node-multipipe (1.0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #846909)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 04 Dec 2016 14:58:45 +0530
